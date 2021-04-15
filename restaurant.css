@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/*
+  ========================================
+  Maps Demo
+  ========================================
+*/
+
+
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #121212;
+}
+
+p {
+	font-size: 16px;
+}
+
+body {
+  background-image: url('https://st2.depositphotos.com/5486284/8016/v/600/depositphotos_80161502-stock-illustration-healthy-food-background.jpg');
+ background-repeat: no-repeat;
+  background-size: auto;
+   background-size: 100% 100%;
+}
+
+.content {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 2px #d3d3d3;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+h1 {
+  background-color: #451400;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem;
+  width: 90%;
+}
+
+h1 img {
+  max-height: 60px;
+  margin-right: 1rem;
+  vertical-align: text-bottom;
+}
+
+p.disclaimer {
+	font-size: .8rem;
+	font-style: italic;
+	margin: 0 auto;
+	padding: 1rem;
+	width: 90%;
+	text-align: center;
+}
+
+#locations-near-you-map {
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+input {
+	color: #000;
+	height: 1.8rem;
+	font-size: .9rem;
+	margin: 0 5px;
+	padding: 3px;
+}
+
+input[type=number] {
+  width: 60px;
+}
+
+input[type=text]  {
+  width: 300px;
+}
+
+button {
+	background-color: #a81612;
+	border-radius: 3px;
+	border: none;
+	color: #fff;
+	padding: .5rem 1rem;
+	transition: background-color 0.2s;
+}
+
+button:hover {
+	background-color: #d6322d;
+}
+
+button:active {
+	background-color: #000;
+	color: #fff;
+}
+
+#location-search-alert {
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+}
+
+.infoWindow h3,
+.location-near-you-box h4 {
+  color: #a81612;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.infoWindow h3 {
+	font-size: 1.2rem;
+}
+
+.infoWindow p {
+	font-size: .8rem;
+}
+
+#locations-near-you {
+  text-align: center;
+}
+
+.location-near-you-box {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px; 
+  border: 1px dotted #000;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.location-near-you-box p {
+  font-size: .75rem;
+}
+
+@media all and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h1 img {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  input[type=number], input[type=text], label {
+    display: block;
+    margin: 10px auto;
+  }
+
+  input[type=text] {
+    max-width: 90%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .location-near-you-box {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
